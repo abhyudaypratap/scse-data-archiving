@@ -17,7 +17,7 @@ class StudentDetail(DetailView):
 
 
 def home(request):
-    return render(request, 'home.html', {})
+    return render(request, 'index.html', {})
 
 
 class OtherStaffDetail(DetailView):
