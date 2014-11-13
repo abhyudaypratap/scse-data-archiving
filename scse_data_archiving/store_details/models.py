@@ -19,7 +19,7 @@ for year in range(2000, (datetime.datetime.now().year + 1)):
 class Faculty(TimeStampedModel):
     _registry = []
     faculty_code = models.CharField(max_length=255)
-    image = StdImageField(upload_to='../static/faculty_images/', null=True)
+    image = StdImageField(upload_to='./static/faculty_images/', null=True)
     name = models.CharField(max_length=255)
     date_of_birth = models.DateField(default=datetime.date.today)
     age = models.IntegerField()
@@ -38,7 +38,7 @@ class Faculty(TimeStampedModel):
 class Student(TimeStampedModel):
     _registry = []
     entry_number = models.CharField(max_length=255)
-    image = StdImageField(upload_to='../static/student_images/', null=True)
+    image = StdImageField(upload_to='./static/student_images/', null=True)
     name = models.CharField(max_length=255)
     date_of_birth = models.DateField(default=datetime.date.today)
     age = models.IntegerField()
@@ -55,7 +55,7 @@ class Student(TimeStampedModel):
 
 class OtherStaff(TimeStampedModel):
     _registry = []
-    image = StdImageField(upload_to='../static/staff_images/', null=True)
+    image = StdImageField(upload_to='./static/staff_images/', null=True)
     code = models.CharField(max_length=255)
     name = models.CharField(max_length=255)
     date_of_birth = models.DateField(default=datetime.date.today)

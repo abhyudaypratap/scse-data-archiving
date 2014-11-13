@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+
+<html class="no-js skrollr skrollr-desktop"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script async="" src="../static/SMVDU/saved_resource"></script><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide{display:none !important;}ng\:form{display:block;}.ng-animate-start{clip:rect(0,auto,auto,0);-ms-zoom:1.0001;}.ng-animate-active{clip:rect(-1px,auto,auto,0);-ms-zoom:1;}</style>
+        
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+        <meta charset="utf-8">
+        <meta id="metaViewportTag" name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>Registration_SCSE</title>
+        <link href="../static/SMVDU/css" rel="stylesheet" type="text/css">
+        <link href="../static/SMVDU/css(1)" rel="stylesheet" type="text/css">
+        <link href="../static/SMVDU/img/favicon.ico" rel="icon" type="image/x-icon">
+        
+        
+
+        <script async="" src="../static/SMVDU/analytics.js"></script><script type="text/javascript" src="../static/SMVDU/html5shiv.js"></script>  
+        <script type="text/javascript" src="../static/SMVDU/respond.js"></script>
+
+        <!-- Bootstrap core CSS -->
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" class="bootstrap-css">
+        
+        
+    
+        
+        <!--link href="/css/style.less" rel="stylesheet/less" type="text/css"-->
+        <link href="../static/SMVDU/style.css" rel="stylesheet" type="text/css">
+        <link href="../static/SMVDU/register-form.css" rel="stylesheet" type="text/css">
+        
+
+        <!-- JavaScript -->
+        <script src="../static/SMVDU/jquery-1.10.2.js"></script>
+        <script src="../static/SMVDU/bootstrap.js"></script>
+        <script src="../static/SMVDU/jquery.validate.js"></script>
+
+        <script src="../static/SMVDU/jquery.cookie.js"></script>
+        <script src="../static/SMVDU/jquery.sticky.js"></script>
+        <script src="../static/SMVDU/jquery.placeholder.js"></script>
+        
+        <script type="text/javascript" src="../static/SMVDU/Chart.min.js"></script>
+        <script type="text/javascript" src="../static/SMVDU/scrollr.js"></script>
+        <script type="text/javascript" src="../static/SMVDU/flowType.js"></script>
+        <script type="text/javascript" src="../static/SMVDU/moment.js"></script>
+        
+        <script type="text/javascript" src="../static/SMVDU/script.js"></script>
+        
+        <script type="text/javascript" src="../static/SMVDU/angular.js"></script>
+        <script type="text/javascript" src="../static/SMVDU/angular-route.js"></script>
+        <script type="text/javascript" src="../static/SMVDU/angular-ui-router.min.js"></script>
+        <script>
+            window.GLOBALS = {};
+            
+        </script>
+        
+    <body class="in-site home register register-form" data-ng-app="Eshop">
+        
+        
+        <div id="wrap">
+    
+            <!-- ui-view-anchor --><div data-ui-view="" data-autoscroll="false"><!-- ui-view-anchor --><div data-ui-view="" data-autoscroll="false" class="ng-scope"><!-- ui-view-anchor --><div data-ui-view="" data-autoscroll="false" class="ng-scope">
+            <div data-google-analytics-pageview="Sign Up" class="ng-scope"></div>
+            <div class="section ng-scope" data-speed="5" data-type="background" style="height: 750px;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 text-center">
+                            <h1 class="no-marg-bot">Sign Up</h1>
+                        </div>
+                    </div>
+                    <div class="row ng-scope" data-ng-controller="UsersController">
+                        <div class="col-xs-12 text-center">
+                            <div class="register-claim">
+                                <p>Fill in the form below</p>
+                                <!-- ngIf: appData.data.event.code == 'JP' -->
+                            </div>
+                        </div>
+                    </div>
+                    <form action="/registration/" method="POST" enctype="multipart/form-data" name="registerForm" data-ng-submit="register()" data-ng-controller="UsersController" novalidate="" value="{}" class="ng-scope ng-pristine ng-invalid ng-invalid-required">
+                        {% csrf_token %}
+                        <div class="form">
+                            <div class="row">
+                                <!-- ngIf: appData.data.event.code != 'JP' -->
+                                <div class="col-xs-12 col-sm-9 ng-scope" ng-if="appData.data.event.code != &#39;JP&#39;">
+                                    <input required="" data-ng-model="userData.user.name.entry_number" name="EntryNumber" type="text" data-ng-minlength="1" class="form-control ng-pristine ng-valid-minlength ng-invalid ng-invalid-required" placeholder="Entry number">
+                                    
+                                </div><!-- end ngIf: appData.data.event.code != 'JP' -->
+                                <!-- ngIf: appData.data.event.code == 'JP' -->
+                            </div>
+                            <div class="row">
+                                <!-- ngIf: appData.data.event.code != 'JP' -->
+                                <div class="col-xs-12 col-sm-9 ng-scope" ng-if="appData.data.event.code != &#39;JP&#39;">
+                                    <input required="" data-ng-model="userData.user.name.first" name="Name" type="text" data-ng-minlength="1" class="form-control ng-pristine ng-valid-minlength ng-invalid ng-invalid-required" placeholder="Name">
+                                    <div data-ng-show="errors.user.name.first || (registerForm.Name.$invalid &amp;&amp; registerForm.$submitted)" class="context-tooltip error ng-hide">Please provide valid name.</div>
+                                </div><!-- end ngIf: appData.data.event.code != 'JP' -->
+                                <!-- ngIf: appData.data.event.code == 'JP' -->
+                            </div>
+                            
+                            <div class="row">
+                                <!-- ngIf: appData.data.event.code != 'JP' -->
+                                <div class="col-xs-12 col-sm-9 ng-scope" ng-if="appData.data.event.code != &#39;JP&#39;">
+                                    <input required="" data-ng-model="userData.user.address.street" name="Address" type="text" class="form-control ng-pristine ng-invalid ng-invalid-required" placeholder="Address">
+                                    <div data-ng-show="errors.user.address.street || (registerForm.Address.$invalid &amp;&amp; registerForm.$submitted)" class="context-tooltip error ng-hide">Please provide valid street.</div>
+                                </div><!-- end ngIf: appData.data.event.code != 'JP' -->
+                        </div>
+                        <div class="row">
+                                
+                        
+                                <!-- ngIf: appData.data.event.code != 'JP' -->
+                                <div class="col-xs-12 col-sm-3 ng-scope" ng-if="appData.data.event.code != &#39;JP&#39;">
+                                    <input required="" data-ng-model="userData.user.address.number" name="Number" type="number" min="7000000000" max="9999999999"   class="form-control ng-pristine ng-invalid ng-invalid-required" placeholder="Mobile">
+                                    <div data-ng-show="errors.user.address.number || (registerForm.Number.$invalid &amp;&amp; registerForm.$submitted)" class="context-tooltip error ng-hide">
+                                        Please provide valid mobile number.</div>
+                                </div><!-- end ngIf: appData.data.event.code != 'JP' -->
+                                <!-- ngIf: appData.data.event.code == 'JP' -->
+                                <div class="col-xs-12 col-sm-6">
+                                    <input required="" type="text" data-ng-model="userData.user.email" name="Email" class="form-control ng-pristine ng-invalid ng-invalid-required" placeholder="email">
+                                    <div data-ng-show="errors.user.email || (registerForm.Email.$invalid &amp;&amp; registerForm.$submitted)" class="context-tooltip error ng-hide">
+                                        Must be a valid email
+                                    </div>
+                                </div>
+                                
+                                <!-- ngIf: appData.data.event.code != 'IN' -->
+                            </div>
+                            <!-- ngIf: appData.data.event.code != 'JP' --><div class="row ng-scope" ng-if="appData.data.event.code != &#39;JP&#39;">
+                                <div class="col-xs-16 col-sm-3 text-right text-form">
+                                    DATE OF BIRTH
+                                </div>
+                                <div class="col-xs-3 col-sm-4  ">
+                                    <input required="" type="text"   data-ng-model="userData.user.birthdate.day" name="BirthdateDay" class="form-control ng-pristine ng-valid-number ng-valid-max ng-valid-min ng-invalid ng-invalid-required" placeholder="YYYY-MM-DD">
+                                </div>
+                                
+                                <div style="position: static;clear: both;text-align: center;" data-ng-show="((registerForm.BirthdateDay.$invalid) &amp;&amp; registerForm.$submitted)" class="context-tooltip error ng-hide">Please provide valid birthdate  Format .</div>
+                            </div>
+                                <!-- end ngIf: appData.data.event.code != 'JP' -->
+                            <!-- JAPANESE DATE OF BIRTH -->
+                            <!-- ngIf: appData.data.event.code == 'JP' -->
+                            <div class="row gender-row">
+                                <div class="col-xs-3 col-sm-2 text-right text-form" style="margin-top: 2px;">
+                                    GENDER
+                                </div>
+                                <div class="col-xs-4 col-sm-2 ">
+
+                                    <div class="checkbox">
+                                        <label>
+                                            <div class="radio-wrap"><input data-ng-model="userData.user.gender" name="Gender" required="" value="male" type="radio" nice-radio="" class="ng-pristine ng-invalid ng-invalid-required"><span></span></div><span>M</span>
+                                        </label>
+                                    </div>
+
+                                </div>
+                                <div class="col-xs-4 col-sm-2 ">
+
+                                    <div class="checkbox">
+                                        <label>
+                                            <div class="radio-wrap"><input data-ng-model="userData.user.gender" name="Gender" required="" value="female" type="radio" nice-radio="" class="ng-pristine ng-invalid ng-invalid-required"><span></span></div><span>F</span>
+                                        </label>
+                                    </div>
+
+                                </div>
+                                <div data-ng-show="errors.user.gender || (registerForm.Gender.$invalid &amp;&amp; registerForm.$submitted)" class="context-tooltip error ng-hide">
+                                    <br>Please specify your gender.
+                                </div>
+                            </div>
+                            <div class="row">
+                               <div class="col-xs-12 col-sm-3 ng-scope" ng-if="appData.data.event.code != &#39;JP&#39;">
+                                    <input required="" data-ng-model="userData.user.joining_year" name="JoiningYear" type="number" digits-only="" min"2011" max="2099" class="form-control ng-pristine ng-invalid ng-invalid-required" placeholder="Joining Year">
+                                    <div data-ng-show="errors.user.joining_year || (registerForm.JoiningYear.$invalid &amp;&amp; registerForm.$submitted)" class="context-tooltip error ng-hide">Please provide valid Year.</div>
+                                </div>
+                                <div class="col-xs-12 col-sm-3 ng-scope" ng-if="appData.data.event.code != &#39;JP&#39;">
+                                    <input required="" data-ng-model="userData.user.semester" name="semester" type="number" digits-only="" min="1" max="8" class="form-control ng-pristine ng-invalid ng-invalid-required" placeholder="Semester">
+                                    <div data-ng-show="errors.user.semester || (registerForm.semester.$invalid &amp;&amp; registerForm.$submitted)" class="context-tooltip error ng-hide">Please provide valid Semester.</div>
+                                </div>
+                                <div class="col-xs-12 col-sm-3 ng-scope" ng-if="appData.data.event.code != &#39;JP&#39;">
+                                    <input required="" data-ng-model="userData.user.projects" name="projects" type="text" class="form-control ng-pristine ng-invalid ng-invalid-required" placeholder="Projects">
+                                    
+                                </div>  
+                            </div>
+                                <!-- ngIf: appData.data.event.code == 'JP' -->
+                                        
+                            <div class="row">
+
+                                <div class="col-xs-12 text-center"><br>
+                                    <input type="submit" name="submit" value="Submit" class="">
+                                    <!--input data-ng-disabled="registerForm.$invalid || isUnchanged(user) || user.passwordConfirm!=user.password" type="submit" value="INVIA" class="btn btn-white"-->
+
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div></div></div>
+    
+            
+        <div data-ng-show="eshopUi.bodyClass === &#39;modal-open&#39;" class="modal-backdrop fade in ng-hide"></div>
+        <div id="spinner" style="position: fixed; left: 0px; top: 0px; right: 0px; bottom: 0px; display: none; background: rgba(255, 255, 255, 0.4);"><img src="../static/SMVDU/ajax-loader.gif" alt="" style="position: absolute; top: 50%; left:50%;margin-left:-16px"></div>
+        <!--img src="/REGISTER_ENG.jpg" alt="" style="position: absolute; opacity: 0.4; top: 4px;left: 194px;" /-->
+        
+    
+            
+        <script type="text/javascript" src="../static/SMVDU/app.js"></script>
+        <script type="text/javascript" src="../static/SMVDU/services.js"></script>
+        <script type="text/javascript" src="../static/SMVDU/controllers.js"></script>
+        <script type="text/javascript" src="../static/SMVDU/filters.js"></script>
+        <script type="text/javascript" src="../static/SMVDU/elements.js"></script>
+
+    
+        
+            
+        
+        
+        
+        
+        
+            
+        
+
+<script type="text/javascript" src="../static/SMVDU/s_retargeting.js"></script></body></html>

@@ -1,6 +1,6 @@
 from django.conf.urls import patterns, url
 from django.contrib import admin
-from .views import FacultyDetail, home, StudentDetail, OtherStaffDetail
+from .views import FacultyDetail, home, StudentDetail, OtherStaffDetail,new_student
 from django.conf.urls.static import static
 
 admin.autodiscover()
@@ -13,7 +13,9 @@ urlpatterns = patterns('',
                        url(r'^otherstaff-details/(?P<slug>\w+)/$',
                            OtherStaffDetail.as_view(
                            ), name='otherstaff-details'),
+                       url(r'^registration/$', new_student, name='registration'),
                        url(r'^home/$', home, name='home'),
+
 
                        )
 #urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

@@ -1,0 +1,281 @@
+.social-menu {
+  display: none;
+}
+@media all and (max-width: 768px) {
+  body.register-form {
+    min-width: 0;
+  }
+  body.register-form .container {
+    width: 728px;
+  }
+  body.register-form .form {
+    width: auto;
+    display: block;
+    margin: 0;
+  }
+  body.register-form #footer {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  body.register-form .register-claim {
+    margin: 0 50px;
+  }
+  body.register-form .navbar .container {
+    padding: 0 26px;
+  }
+  body.register-form .navbar-collapse.collapse {
+    position: relative;
+  }
+  body.register-form .navbar-right {
+    width: auto;
+    position: absolute;
+    z-index: 10;
+    top: 100%;
+    left: -10px;
+    right: 0;
+    margin-right: 0 !important;
+    text-align: center;
+    padding-top: 12px;
+    white-space: nowrap;
+  }
+  body.register-form .navbar-right * {
+    text-align: left;
+    white-space: normal;
+  }
+  body.register-form .navbar-right .btn {
+    text-align: center;
+  }
+  body.register-form .navbar-right > li {
+    display: inline-block;
+    float: none;
+    font-size: 21px;
+    white-space: nowrap;
+  }
+  body.register-form .navbar-right > li a {
+    font-size: 21px;
+  }
+  body.register-form .social-menu-item {
+    position: absolute;
+    bottom: 100%;
+    right: 0;
+    margin-bottom: 10px;
+  }
+  body.register-form .social-menu-item.facebook {
+    right: 88px;
+  }
+  body.register-form .social-menu-item.twitter {
+    right: 36px;
+  }
+  body.register-form .social-menu-item.instagram {
+    right: -3px;
+  }
+}
+@media all and (max-width: 767px) {
+  body.register-form .container {
+    width: auto;
+  }
+  body.register-form .navbar {
+    padding-top: 10px;
+    border: none;
+  }
+  body.register-form .navbar .container {
+    padding: 0;
+  }
+  body.register-form .navbar.white .navbar-brand {
+    background-size: 100%;
+    width: 120px;
+    margin-top: 1px;
+  }
+  body.register-form .navbar.white .container .main {
+    padding: 0;
+    border: none;
+  }
+  body.register-form .social-menu-item {
+    display: none !important;
+  }
+  body.register-form .social-menu {
+    display: block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  body.register-form .social-menu li {
+    display: inline-block;
+    vertical-align: top;
+  }
+  body.register-form .social-menu .icon {
+    display: inline-block;
+  }
+  body.register-form .social-menu .icon.facebook {
+    margin-left: 7px;
+    margin-top: 0;
+    background: url(/img/facebook-white.png) no-repeat center center;
+    height: 39px;
+    width: 42px;
+  }
+  body.register-form .social-menu .icon.twitter {
+    background: url(/img/twitter-white.png) no-repeat center center;
+    height: 39px;
+    width: 39px;
+    margin-top: 0;
+  }
+  body.register-form .social-menu .icon.photo {
+    margin-top: 0;
+    padding-left: 11px;
+    background: url(/img/foto-white.png) no-repeat center right;
+    height: 41px;
+    width: 32px;
+    margin-right: 3px;
+  }
+  body.register-form .navbar-collapse {
+    padding: 0;
+    border: none;
+    margin-top: -1px;
+    max-height: 1000px;
+  }
+  body.register-form .navbar-header {
+    margin: 0 15px;
+    border-bottom: 1px solid #fff;
+  }
+  body.register-form .navbar-right {
+    position: static;
+    z-index: 10;
+    top: 100%;
+    margin-left: 0;
+    margin-right: 0 !important;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 12px 15px;
+    text-align: left;
+    padding-top: 12px;
+    padding-bottom: 6px;
+    white-space: nowrap;
+    background: #f3f3f3;
+  }
+  body.register-form .navbar-right * {
+    text-align: left;
+    white-space: normal;
+  }
+  body.register-form .navbar-right .btn {
+    text-align: center;
+  }
+  body.register-form .navbar-right > li {
+    display: block;
+    float: none;
+    font-size: 21px;
+  }
+  body.register-form .navbar-right > li > a {
+    font-size: 21px;
+    padding: 12px 12px !important;
+    color: #221a53 !important;
+    border-bottom: 1px solid #fff;
+  }
+  body.register-form .navbar-right > li.noborder {
+    border: none;
+  }
+  body.register-form .navbar-right > li.noborder a {
+    border: none;
+  }
+  body.register-form .navbar-right > li.separator {
+    display: none;
+  }
+  body.register-form .navbar-toggle {
+    margin: 0;
+    margin-top: -4px;
+    margin-right: -10px;
+    width: 50px;
+  }
+  body.register-form .navbar-toggle .icon-bar {
+    background: #fff;
+    height: 4px;
+    border-radius: 5px;
+    width: 100%;
+  }
+  body.register-form .navbar .navbar-nav .open .dropdown-menu {
+    min-width: 0;
+    position: static;
+    float: none;
+    margin: 0;
+  }
+  body.register-form .navbar .navbar-nav .open .dropdown-menu li a,
+  body.register-form .navbar .navbar-nav .open .dropdown-menu li > span {
+    margin: 0;
+    width: 100%;
+  }
+  body.register-form .navbar .navbar-nav .open .dropdown-menu.login .form-horizontal .psw {
+    padding-right: 15px;
+  }
+  body.register-form .navbar .navbar-nav .open .dropdown-menu.login .form-horizontal .butn {
+    padding-left: 15px;
+    padding-top: 10px;
+  }
+  body.register-form .navbar .navbar-nav .open .dropdown-menu.events-dropdown li {
+    width: 100%;
+  }
+  body.register-form .navbar .navbar-nav .open .dropdown-menu.signup .btn {
+    border: 2px solid #fff;
+  }
+  body.register-form .user-menu {
+    width: 100%;
+  }
+  body.register-form .promo-code-row {
+    padding-bottom: 20px;
+  }
+  body.register-form .form .form-control {
+    height: 56px;
+  }
+  body.register-form .register-claim {
+    display: none;
+  }
+  body.register-form .form .small-label {
+    width: auto;
+  }
+  body.register-form .acc-options-row {
+    padding: 30px 0;
+  }
+  body.register-form .acc-options-row .right {
+    text-align: left;
+  }
+  body.register-form .form .row .gg,
+  body.register-form .form .row .mm {
+    width: 25%;
+    padding: 0 10px;
+  }
+  body.register-form .form .row .gg input,
+  body.register-form .form .row .mm input {
+    width: 100%;
+  }
+  body.register-form .form .checkbox-wrap,
+  body.register-form .form .radio-wrap {
+    width: 36px;
+    height: 36px;
+    margin-bottom: -12px;
+  }
+  body.register-form .form .checkbox-wrap.checked span,
+  body.register-form .form .radio-wrap.checked span {
+    width: 30px;
+    height: 30px;
+  }
+  body.register-form .gender-row .text-form {
+    margin-top: 0 !important;
+  }
+  body.register-form .form .condit .checkbox-wrap {
+    margin-top: -1px;
+  }
+  body.register-form .text-form {
+    text-align: center;
+    padding: 10px 10px !important;
+  }
+  body.register-form .condit .checkbox {
+    width: 100%;
+  }
+}
+.jp-site.parallax .box3 .container .text {
+  height: 740px;
+  top: 413px;
+}
+.jp-site .navbar .navbar-nav .open .dropdown-menu.profile {
+  right: 0;
+}

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+{% load staticfiles %}
 <head>
 
     <meta charset="utf-8">
@@ -10,7 +10,7 @@
     <meta name="author" content="">
     
     <title>Computer Science & Engineering - SMVDU</title>
-    <link href="../img/favicon.ico" />
+    <link href="../static/img/favicon.ico" rel="icon" type="image/x-icon">
     <!-- Bootstrap Core CSS -->
     <link href="../static/css/bootstrap.min.css" rel="stylesheet">
 
@@ -61,7 +61,7 @@
             <li>
                 <a href="#contact">Contact</a>
             </li>
-        </ul>
+        </ul>*
     </nav>
 
     <!-- Header -->
@@ -127,7 +127,7 @@
                     <hr class="small">
                     <div class="row">
 
-                        <input id="facultytextbox" type="text" />
+                       
                         <button id="FacultyButton" class="btn btn-primary " >Faculty Details</button><br><br><br><br>
 
                         
@@ -148,7 +148,6 @@
                     <hr class="small">
                     <div class="row">
 
-                        <input id="otherstafftextbox" type="text" />
                         <button id="OtherStaffButton" class="btn btn-success" >Staff Details</button><br><br><br>
                     <!-- /.row (nested) -->
                 </div>
@@ -224,7 +223,7 @@
     
     document.getElementById("FacultyButton").onclick = function () {
        var textboxValue = document.getElementById("facultytextbox").value;
-         location.href = "/faculty-details/" + textboxValue;
+         location.href = "/faculty-details/";
     };
     document.getElementById("StudentButton").onclick=function(){
         var student_textbox_value=document.getElementById("studenttextbox").value;
@@ -232,7 +231,7 @@
     };
     document.getElementById("OtherStaffButton").onclick=function(){
         var otherstaff_textbox_value=document.getElementById("otherstafftextbox").value;
-        location.href="/otherstaff-details/" + otherstaff_textbox_value;
+        location.href="/otherstaff-details/";
     };
     </script>
 
