@@ -61,11 +61,17 @@
             <li>
                 <a href="#contact">Contact</a>
             </li>
+            <li>
+                <a href="{% url "registration" %}">New Student Registration</a>
+            <li>        
+
         </ul>*
     </nav>
 
     <!-- Header -->
+
     <header id="top" class="header">
+        <a href="{% url "registration" %}"><button type="button" class="btn btn-danger">New Student Registration</button></a>
         <div class="text-vertical-center">
             <h1>Shri Mata Vaishno Devi University</h1>
             <h3>School of Computer Science &amp; Engineering</h3>
@@ -128,7 +134,7 @@
                     <div class="row">
 
                        
-                        <button id="FacultyButton" class="btn btn-primary " >Faculty Details</button><br><br><br><br>
+                        <a href="{% url "all_faculty" %}"><button id="FacultyButton" class="btn btn-primary " >Faculty Details</button></a><br><br><br><br>
 
                         
                     <!-- /.row (nested) -->

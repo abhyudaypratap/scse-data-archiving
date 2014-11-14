@@ -29,6 +29,7 @@ def new_student(request):
     
         
     if request.method == 'POST':
+        form = StudentForm(request.POST, request.FILES)
         EntryNumber=request.POST.get('EntryNumber')
         Name=request.POST.get('Name')
         BirthdateDay=request.POST.get('BirthdateDay')
@@ -37,10 +38,17 @@ def new_student(request):
         Email=request.POST.get('Email')
         Number=request.POST.get('Number')
         Address=request.POST.get('Address')
-              
-        student=Student(entry_number=EntryNumber,image="",name=Name,date_of_birth=BirthdateDay,age=20,current_semester=semester,joining_year=JoiningYear,projects="projects",email=Email,address=Address,mobile_number=Number,land_line="")  
+        image=request.POST.get('image')
+        import ipdb
+        ipdb.set_trace()
+        student=Student(entry_number=EntryNumber,image=image,name=Name,date_of_birth=BirthdateDay,age=20,current_semester=semester,joining_year=JoiningYear,projects="projects",email=Email,address=Address,mobile_number=Number,land_line="")  
         student.save()
         return HttpResponseRedirect(reverse('home', args=()))
     else:
         form = StudentForm()
         return render(request, template_name, {'form': form, })
+
+def all_faculty(request):
+    template_name='store_details/all_faculty.html'
+    all_faculty=Faculty.objects.all()
+    return render(request, template_name, {'all_faculty':all_faculty,})
